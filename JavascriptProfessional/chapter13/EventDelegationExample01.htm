@@ -1,0 +1,35 @@
+<html>
+<head>
+<script src="./EventUtil.js">
+</script>
+</head>
+
+<body>
+<ul id="myLinks">
+	<li id="goSomewhere">Go somewhere</li>
+	<li id="doSomething">Do something</li>
+	<li id="sayHi">Say hi</li>
+</ul>
+
+<script>
+
+var item1 = document.getElementById("goSomewhere");
+var item2 = document.getElementById("doSomething");
+var item3 = document.getElementById("sayHi");
+
+EventUtil.addHandler(item1, "click", function(event) {
+		location.href = "http://www.wrox.com";
+});
+
+EventUtil.addHandler(item2, "click", function(event) {
+		document.title = "I changed the\
+document's title";
+});
+
+EventUtil.addHandler(item3, "click", function(event) {
+		alert("hi");
+});
+</script>
+</body>
+
+</html>

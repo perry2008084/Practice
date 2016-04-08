@@ -1,0 +1,14 @@
+function test() {
+	message = "hi";
+	console.log(message);
+}
+
+test();
+
+
+var message = "hi",
+    found = false,
+    age = 29;
+
+var eval;
+
