@@ -1,8 +1,8 @@
-function createCar() {
+function createCar(sColor, iDoors, iMpg) {
 	var oTempCar = new Object;
-	oTempCar.color = "blue";
-	oTempCar.doors = 4;
-	oTempCar.mpg = 25;
+	oTempCar.color = sColor;
+	oTempCar.doors = iDoors;
+	oTempCar.mpg = iMpg;
 	oTempCar.showColor = function() {
 		alert(this.color);
 	};
