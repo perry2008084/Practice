@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+function apiStatus(data) {
+  console.log(data.status);
+
+  document.getElementById("status").innerHTML=data.status;
+  document.getElementById("updatetime").innerHTML=data.last_updated;
+}
+
+</script>
+
+</head>
+
+<body>
+<div class="header">
+<h1>Github Status</h1>
+</div>
+
+<div class="content">
+<p>Status: <span id="status"></span></p>
+<p>Update Time: <span id="updatetime"></span></p>
+</div>
+
+<div class="footer"></div>
+
+<script src="https://status.github.com/api/status.json?callback=apiStatus"></script>
+</body>
+</html>
