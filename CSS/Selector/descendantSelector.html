@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 
+问题：
+假设有一个文档，其中有一个边栏，还有一个主区。边栏的背景为蓝色，主区的背景为白色，这两个区都包含链接列表。不能把所有链接都设置为蓝色，因为这样一来边栏中的蓝色链接都无法看到。
+
+解决方法：
+使用后代选择器。在这种情况下，可以为包含边栏的 div 指定值为 sidebar 的 class 属性，并把主区的 class 属性值设置为 maincontent。
+-->
+<style type="text/css">
+h1 em {
+	color:red;
+}
+
+div.sidebar {background:red;}
+div.maincontent {background:white;}
+div.sidebar a:link {color:black;}
+div.maincontent a:link {color:blue;}
+</style>
+</head>
+
+<body>
+<h1>This is a <em>important</em> heading</h1>
+<p>This is a <em>important</em> paragraph</p>
+
+<div>
+<div class="sidebar">
+<a href="#">link 1</a>
+</div>
+
+<div class="maincontent">
+<a href="#">link 2</a>
+</div>
+</div>
+
+</body>
+
+</html>
