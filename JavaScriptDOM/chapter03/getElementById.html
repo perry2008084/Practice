@@ -15,7 +15,27 @@
 </ul>
 
 <script>
-	alert(typeof document.getElementById("purchases"));
+	//alert(typeof document.getElementById("purchases"));
+	//alert(document.getElementsByTagName("*").length);
+	//alert(document.getElementsByClassName("important sale").length);
+	function getElementsByClassName(node, classname) {
+		if (node.getElementsByClassName) {
+			return node.getElementsByClassName(classname);
+		} else {
+			var results = new Array();
+			for (var i=0; i<elems.length; i++) {
+				if (elems[i].classname.indexof(classname) != -1) {
+					results[results.length] = elems[i];
+				}
+			}
+			return results;
+		}
+	}
+
+	var shopping = document.getElementById("purchases");
+	var sales = getElementsByClassName(shopping, "sale");
+	alert(sales.length);
+
 </script>
 </body>
 </html>
