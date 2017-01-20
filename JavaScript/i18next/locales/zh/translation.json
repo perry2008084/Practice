@@ -1,0 +1,10 @@
+{
+  "nav": {
+    "home": "主页",
+    "page1": "第一页",
+    "page2": "第二页"
+  },
+  "input": {
+    "placeholder": "占位"
+  }
+}
