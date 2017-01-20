@@ -4,5 +4,5 @@
 
 ## JavaScript
 
-* [i18next, js国际化方案之一]()
+* [i18next, js国际化方案之一](https://github.com/perry2008084/Practice/tree/master/JavaScript/i18next)
 
